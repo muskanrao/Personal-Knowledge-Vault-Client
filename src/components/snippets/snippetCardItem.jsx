@@ -2,16 +2,15 @@ import {useState} from "react"
 import React from "react"
 
 
-function CardItem(props) { // read card item.
-    console.log("inside notes.", props.item)
-
+function SnippetCardItem(props) { // read card item.
+    console.log("inside snippet -->", props.item)
     return (<div className="card"
         style={
             {width: "18rem"}
     }>
-        <div className="card-body" onClick={}>
-            <h5 className="card-title">Notes</h5>
-            <h6 className="card-subtitle mb-2 text-body-secondary">Note subtitle</h6>
+        <div className="card-body">
+            <h5 className="card-title">Snippet title</h5>
+            <h6 className="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
             <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
             <a href="#" className="card-link">Card link</a>
             <a href="#" className="card-link">Another link</a>
@@ -19,4 +18,4 @@ function CardItem(props) { // read card item.
     </div>)
 }
 
-export default CardItem;
+export default SnippetCardItem;
